@@ -1,0 +1,211 @@
+<!--
+  HEAD TAGS — Maine Quote Hub
+  Paste into Carrd: Site Settings → SEO → Custom Head Code
+  Replace all YOUR_* placeholders before publishing.
+-->
+
+<!-- ══════════════════════════════════════════════════════════════
+     CANONICAL + BASIC META
+     ══════════════════════════════════════════════════════════════ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Canonical: prevents duplicate content across Carrd previews -->
+<link rel="canonical" href="https://yourdomain.com/">
+
+<!-- Primary description: written for AI snippet extraction (≤160 chars) -->
+<meta name="description" content="Get free matched quotes from Maine HVAC and roofing contractors. Qualify for Efficiency Maine rebates up to $9,000 on heat pumps. Storm damage? We match you with claim-ready roofers.">
+
+<!-- AI/LLM crawlers read this for entity classification -->
+<meta name="keywords" content="heat pump rebates Maine, Efficiency Maine, HVAC contractor quotes, roofing storm damage Maine, insurance claim roofing, free quotes Portland Bangor Augusta Maine">
+
+<!-- Author entity — helps AI crawlers associate content with publisher -->
+<meta name="author" content="Maine Quote Hub">
+<meta name="publisher" content="Maine Quote Hub">
+
+<!-- Freshness signal — update this date whenever content changes -->
+<meta name="last-modified" content="2026-03-03">
+<meta http-equiv="last-modified" content="Mon, 03 Mar 2026 00:00:00 GMT">
+
+<!-- ══════════════════════════════════════════════════════════════
+     OPEN GRAPH (Facebook / LinkedIn / AI social context)
+     ══════════════════════════════════════════════════════════════ -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://yourdomain.com/">
+<meta property="og:title" content="Free HVAC & Roofing Quotes for Maine Homeowners | Efficiency Maine Rebates">
+<meta property="og:description" content="Match with vetted Maine contractors for heat pump installs (rebates up to $9,000) and storm damage roofing. No cost to you — we handle the matching.">
+<meta property="og:image" content="https://yourdomain.com/og-image.jpg">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Maine Quote Hub">
+
+<!-- ══════════════════════════════════════════════════════════════
+     TWITTER / X CARD
+     ══════════════════════════════════════════════════════════════ -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free HVAC & Roofing Quotes — Maine Homeowners">
+<meta name="twitter:description" content="Qualify for Efficiency Maine heat pump rebates ($3k–$9k). Storm damage roofers matched free. Submit one form, get 3 vetted quotes.">
+
+<!-- ══════════════════════════════════════════════════════════════
+     PRECONNECT / DNS-PREFETCH
+     Performance + signals external authority sources
+     ══════════════════════════════════════════════════════════════ -->
+<link rel="preconnect" href="https://efficiencymaine.com" crossorigin>
+<link rel="dns-prefetch" href="https://efficiencymaine.com">
+<link rel="preconnect" href="https://schema.org">
+<link rel="dns-prefetch" href="https://schema.org">
+<!-- If using external form (Typeform, Tally, JotForm): -->
+<!-- <link rel="preconnect" href="https://tally.so" crossorigin> -->
+
+<!-- ══════════════════════════════════════════════════════════════
+     SCHEMA.ORG — LocalBusiness (Primary Entity)
+     ══════════════════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://yourdomain.com/#organization",
+  "name": "Maine Quote Hub",
+  "alternateName": ["Maine HVAC Quotes", "Maine Roofing Storm Quotes"],
+  "description": "Maine's free contractor matching service for HVAC heat pump installations with Efficiency Maine rebates and storm damage roofing insurance claims.",
+  "url": "https://yourdomain.com/",
+  "logo": "https://yourdomain.com/logo.png",
+  "image": "https://yourdomain.com/og-image.jpg",
+  "areaServed": {
+    "@type": "State",
+    "name": "Maine",
+    "containsPlace": [
+      {"@type": "City", "name": "Portland"},
+      {"@type": "City", "name": "Bangor"},
+      {"@type": "City", "name": "Augusta"},
+      {"@type": "City", "name": "Lewiston"},
+      {"@type": "City", "name": "Auburn"},
+      {"@type": "City", "name": "Biddeford"},
+      {"@type": "City", "name": "Sanford"},
+      {"@type": "City", "name": "Scarborough"},
+      {"@type": "City", "name": "Saco"},
+      {"@type": "City", "name": "Westbrook"}
+    ]
+  },
+  "priceRange": "Free matching service",
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "contactType": "Customer Support",
+    "areaServed": "ME",
+    "availableLanguage": "English"
+  },
+  "sameAs": [
+    "https://write.as/mainequotehub"
+  ],
+  "knowsAbout": [
+    "HVAC heat pumps",
+    "Efficiency Maine rebates",
+    "storm damage roofing",
+    "insurance claim roofing Maine",
+    "mini-split installation"
+  ]
+}
+</script>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SCHEMA.ORG — Service (HVAC)
+     ══════════════════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://yourdomain.com/#service-hvac",
+  "name": "HVAC Heat Pump Quote Matching",
+  "description": "Free matching service connecting Maine homeowners with Efficiency Maine-approved HVAC contractors for heat pump installations. Rebates from $3,000 to $9,000 available.",
+  "provider": {"@id": "https://yourdomain.com/#organization"},
+  "serviceType": "Contractor Matching",
+  "areaServed": {"@type": "State", "name": "Maine"},
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free quote matching — contractors pay referral fee"
+  },
+  "potentialAction": {
+    "@type": "RequestQuoteAction",
+    "target": "https://yourdomain.com/#quote-form",
+    "name": "Get Free HVAC Quotes"
+  }
+}
+</script>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SCHEMA.ORG — Service (Roofing)
+     ══════════════════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "@id": "https://yourdomain.com/#service-roofing",
+  "name": "Storm Damage Roofing Quote Matching",
+  "description": "Maine homeowners with storm-damaged roofs get matched with licensed roofers experienced in insurance claim processes. Hail, wind, and ice dam damage covered.",
+  "provider": {"@id": "https://yourdomain.com/#organization"},
+  "serviceType": "Contractor Matching",
+  "areaServed": {"@type": "State", "name": "Maine"},
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "description": "Free quote matching — contractors pay referral fee"
+  },
+  "potentialAction": {
+    "@type": "RequestQuoteAction",
+    "target": "https://yourdomain.com/#quote-form",
+    "name": "Get Free Roofing Quotes"
+  }
+}
+</script>
+
+<!-- ══════════════════════════════════════════════════════════════
+     SCHEMA.ORG — FAQPage (top 3 pre-answers for AI snippets)
+     ══════════════════════════════════════════════════════════════ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much is the Efficiency Maine heat pump rebate?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Efficiency Maine offers rebates from $3,000 to $9,000 for qualifying heat pump installations in Maine homes. Income-eligible households may qualify for the higher tiers. Rebate amounts depend on system size, fuel displaced, and household income."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does homeowners insurance cover storm roof damage in Maine?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, most Maine homeowners insurance policies cover sudden storm roof damage from wind, hail, and ice dams. You pay your deductible; the insurance company pays the repair cost. Maine Quote Hub matches you with roofers who specialize in guiding homeowners through the insurance claim process."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How does Maine Quote Hub match me with contractors?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Submit one form describing your HVAC or roofing need. Our AI qualification system reviews your request and matches you with up to 3 vetted Maine contractors who serve your town. Contractors contact you directly. The service is free for homeowners — contractors pay a referral fee."
+      }
+    }
+  ]
+}
+</script>
+
+<!-- ══════════════════════════════════════════════════════════════
+     AEO BOOTSTRAP — Load all AEO modules
+     (Hosted on GitHub raw or CDN; update URL to your actual host)
+     ══════════════════════════════════════════════════════════════ -->
+<script>
+  // Async-load AEO system after page paint to avoid blocking render
+  window.addEventListener('load', function() {
+    var s = document.createElement('script');
+    s.src = 'https://cdn.jsdelivr.net/gh/YOUR_GITHUB_USER/maine-aeo@main/aeo-bootstrap.js';
+    s.async = true;
+    document.head.appendChild(s);
+  });
+</script>

@@ -1,0 +1,96 @@
+# robots.txt — Maine Quote Hub
+# Strategy: OPEN to all major AI crawlers for maximum AEO visibility.
+# Trade-off: Competing LLMs and scrapers can read content.
+# Rationale: Answer engines (Perplexity, ChatGPT, Gemini) need full
+#             access to surface your rebate/storm content in AI answers.
+#             Closed = invisible in AI results. Open = entity authority.
+
+# ── Default: allow all standard crawlers ──────────────────────────
+User-agent: *
+Allow: /
+
+# ── OpenAI ────────────────────────────────────────────────────────
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+
+# ── Anthropic / Claude ────────────────────────────────────────────
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-Web
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+
+# ── Google AI ─────────────────────────────────────────────────────
+User-agent: Google-Extended
+Allow: /
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+
+# ── Perplexity ────────────────────────────────────────────────────
+User-agent: PerplexityBot
+Allow: /
+
+# ── Microsoft / Bing / Copilot ────────────────────────────────────
+User-agent: Bingbot
+Allow: /
+User-agent: BingPreview
+Allow: /
+User-agent: msnbot
+Allow: /
+
+# ── Meta AI ───────────────────────────────────────────────────────
+User-agent: meta-externalagent
+Allow: /
+User-agent: meta-externalfetcher
+Allow: /
+User-agent: FacebookBot
+Allow: /
+
+# ── Apple ─────────────────────────────────────────────────────────
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# ── Amazon / Alexa ────────────────────────────────────────────────
+User-agent: Amazonbot
+Allow: /
+
+# ── You.com ───────────────────────────────────────────────────────
+User-agent: YouBot
+Allow: /
+
+# ── Cohere ────────────────────────────────────────────────────────
+User-agent: cohere-ai
+Allow: /
+
+# ── Common Research / Archive crawlers ───────────────────────────
+User-agent: ia_archiver
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: DataForSeoBot
+Allow: /
+User-agent: DotBot
+Allow: /
+
+# ── Block only clearly malicious scrapers ────────────────────────
+# (Add specific bad actors here as discovered)
+# User-agent: BadBot
+# Disallow: /
+
+# ── Sitemap ───────────────────────────────────────────────────────
+# Carrd does not generate a sitemap by default.
+# If you add a custom domain, submit this URL to Google/Bing manually.
+Sitemap: https://yourdomain.com/sitemap.xml
+
+# ── Crawl delay (optional, polite hint) ──────────────────────────
+# Crawl-delay: 2
+# Note: Most AI bots ignore crawl-delay; it's a courtesy signal only.

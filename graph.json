@@ -1,0 +1,235 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "created": "2026-03-03",
+    "lastUpdated": "2026-03-03",
+    "description": "Maine Quote Hub Knowledge Graph — AEO entity nodes and relationships",
+    "totalNodes": 58,
+    "nodeTypes": ["Service", "Location", "BlogPost", "FAQ", "ContractorPartner", "Rebate", "InsuranceProgram"],
+    "schema": "https://schema.org"
+  },
+
+  "nodes": {
+
+    "services": [
+      {
+        "id": "service:hvac-heat-pumps",
+        "type": "Service",
+        "name": "HVAC Heat Pump Installation",
+        "slug": "hvac-heat-pumps",
+        "description": "Ductless mini-split and ducted heat pump systems installed in Maine homes by Efficiency Maine-approved contractors.",
+        "keywords": ["heat pump", "mini-split", "ductless", "HVAC", "furnace replacement", "heating and cooling"],
+        "rebateProgram": "rebate:efficiency-maine-hp",
+        "avgProjectCost": { "min": 3000, "max": 18000, "currency": "USD" },
+        "rebateRange": { "min": 3000, "max": 9000, "currency": "USD" },
+        "url": "https://yourdomain.com/#hvac",
+        "canonicalAnchor": "#hvac",
+        "freshness": "2026-03-03"
+      },
+      {
+        "id": "service:roofing-storm",
+        "type": "Service",
+        "name": "Roofing Storm Damage Repair",
+        "slug": "roofing-storm",
+        "description": "Matching Maine homeowners with licensed roofers experienced in wind, hail, and ice-dam insurance claims.",
+        "keywords": ["storm roof", "hail damage", "wind damage", "ice dam", "roof insurance claim", "shingle replacement"],
+        "rebateProgram": null,
+        "avgProjectCost": { "min": 5000, "max": 25000, "currency": "USD" },
+        "insuranceCoverage": "homeowners policy — subject to deductible",
+        "url": "https://yourdomain.com/#roofing",
+        "canonicalAnchor": "#roofing",
+        "freshness": "2026-03-03"
+      },
+      {
+        "id": "service:efficiency-maine-rebates",
+        "type": "Service",
+        "name": "Efficiency Maine Rebate Navigation",
+        "slug": "efficiency-maine-rebates",
+        "description": "Guidance and contractor matching to help Maine homeowners qualify for and receive Efficiency Maine heat pump rebates.",
+        "externalUrl": "https://www.efficiencymaine.com/at-home/heat-pumps/",
+        "freshness": "2026-03-03"
+      },
+      {
+        "id": "service:insurance-claim-assistance",
+        "type": "Service",
+        "name": "Roofing Insurance Claim Assistance",
+        "slug": "insurance-claim",
+        "description": "Connecting homeowners with roofers who guide through insurance claim filing, adjuster meetings, and settlement.",
+        "freshness": "2026-03-03"
+      }
+    ],
+
+    "rebates": [
+      {
+        "id": "rebate:efficiency-maine-hp",
+        "type": "Rebate",
+        "name": "Efficiency Maine Residential Heat Pump Rebate",
+        "program": "Efficiency Maine Trust",
+        "programUrl": "https://www.efficiencymaine.com/at-home/heat-pumps/",
+        "tiers": [
+          { "tier": "Standard", "amount": 3000, "notes": "All qualifying Maine homeowners" },
+          { "tier": "Enhanced", "amount": 6000, "notes": "Income-eligible (up to 80% AMI)" },
+          { "tier": "Maximum",  "amount": 9000, "notes": "Income-eligible + multi-zone system" }
+        ],
+        "requirements": [
+          "Maine primary residence",
+          "Licensed Efficiency Maine-approved installer",
+          "Approved equipment list (CEE Tier)",
+          "Rebate application submitted within 90 days of install"
+        ],
+        "freshness": "2026-03-03",
+        "lastVerified": "2026-03-03"
+      }
+    ],
+
+    "locations": [
+      { "id": "location:portland-me",          "type": "Location", "name": "Portland",         "county": "Cumberland",  "zipExamples": ["04101","04102","04103"], "population": 68000,  "serviced": true },
+      { "id": "location:bangor-me",             "type": "Location", "name": "Bangor",           "county": "Penobscot",   "zipExamples": ["04401","04402"],         "population": 32000,  "serviced": true },
+      { "id": "location:augusta-me",            "type": "Location", "name": "Augusta",          "county": "Kennebec",    "zipExamples": ["04330","04332"],         "population": 18000,  "serviced": true },
+      { "id": "location:lewiston-me",           "type": "Location", "name": "Lewiston",         "county": "Androscoggin","zipExamples": ["04240","04241"],         "population": 37000,  "serviced": true },
+      { "id": "location:auburn-me",             "type": "Location", "name": "Auburn",           "county": "Androscoggin","zipExamples": ["04210","04211"],         "population": 24000,  "serviced": true },
+      { "id": "location:biddeford-me",          "type": "Location", "name": "Biddeford",        "county": "York",        "zipExamples": ["04005","04007"],         "population": 22000,  "serviced": true },
+      { "id": "location:sanford-me",            "type": "Location", "name": "Sanford",          "county": "York",        "zipExamples": ["04073"],                 "population": 21000,  "serviced": true },
+      { "id": "location:brunswick-me",          "type": "Location", "name": "Brunswick",        "county": "Cumberland",  "zipExamples": ["04011"],                 "population": 22000,  "serviced": true },
+      { "id": "location:saco-me",               "type": "Location", "name": "Saco",             "county": "York",        "zipExamples": ["04072"],                 "population": 20000,  "serviced": true },
+      { "id": "location:westbrook-me",          "type": "Location", "name": "Westbrook",        "county": "Cumberland",  "zipExamples": ["04092"],                 "population": 19000,  "serviced": true },
+      { "id": "location:south-portland-me",     "type": "Location", "name": "South Portland",   "county": "Cumberland",  "zipExamples": ["04106"],                 "population": 26000,  "serviced": true },
+      { "id": "location:scarborough-me",        "type": "Location", "name": "Scarborough",      "county": "Cumberland",  "zipExamples": ["04074"],                 "population": 22000,  "serviced": true },
+      { "id": "location:gorham-me",             "type": "Location", "name": "Gorham",           "county": "Cumberland",  "zipExamples": ["04038"],                 "population": 17000,  "serviced": true },
+      { "id": "location:windham-me",            "type": "Location", "name": "Windham",          "county": "Cumberland",  "zipExamples": ["04062"],                 "population": 18000,  "serviced": true },
+      { "id": "location:yarmouth-me",           "type": "Location", "name": "Yarmouth",         "county": "Cumberland",  "zipExamples": ["04096"],                 "population": 9000,   "serviced": true },
+      { "id": "location:falmouth-me",           "type": "Location", "name": "Falmouth",         "county": "Cumberland",  "zipExamples": ["04105"],                 "population": 13000,  "serviced": true },
+      { "id": "location:cape-elizabeth-me",     "type": "Location", "name": "Cape Elizabeth",   "county": "Cumberland",  "zipExamples": ["04107"],                 "population": 9000,   "serviced": true },
+      { "id": "location:old-orchard-beach-me",  "type": "Location", "name": "Old Orchard Beach","county": "York",        "zipExamples": ["04064"],                 "population": 9000,   "serviced": true },
+      { "id": "location:bath-me",               "type": "Location", "name": "Bath",             "county": "Sagadahoc",   "zipExamples": ["04530"],                 "population": 8000,   "serviced": true },
+      { "id": "location:brewer-me",             "type": "Location", "name": "Brewer",           "county": "Penobscot",   "zipExamples": ["04412"],                 "population": 9000,   "serviced": true }
+    ],
+
+    "faqs": [
+      {
+        "id": "faq:rebate-amount",
+        "type": "FAQ",
+        "question": "How much is the Efficiency Maine heat pump rebate?",
+        "answer": "Efficiency Maine offers rebates from $3,000 to $9,000. Standard rebate is $3,000 for any qualifying Maine homeowner. Income-eligible households (up to 80% AMI) may receive $6,000–$9,000 depending on system size.",
+        "relatedService": "service:hvac-heat-pumps",
+        "relatedRebate": "rebate:efficiency-maine-hp",
+        "freshness": "2026-03-03",
+        "confidence": 0.95,
+        "citationUrl": "https://www.efficiencymaine.com/at-home/heat-pumps/"
+      },
+      {
+        "id": "faq:insurance-covers-roof",
+        "type": "FAQ",
+        "question": "Does homeowners insurance cover storm roof damage in Maine?",
+        "answer": "Yes. Most Maine homeowners insurance policies cover sudden storm damage (wind, hail, ice dams). The homeowner pays their deductible; the insurer covers the rest. Maine Quote Hub matches you with roofers who specialize in guiding you through the claim.",
+        "relatedService": "service:roofing-storm",
+        "freshness": "2026-03-03",
+        "confidence": 0.90,
+        "citationUrl": "https://www.maine.gov/pfr/insurance/"
+      },
+      {
+        "id": "faq:how-matching-works",
+        "type": "FAQ",
+        "question": "How does Maine Quote Hub match me with contractors?",
+        "answer": "Submit one form. Our AI reviews your request, confirms your Maine location, and matches you with up to 3 vetted licensed contractors. Contractors contact you within 24 hours. Completely free for homeowners.",
+        "relatedService": "service:hvac-heat-pumps",
+        "freshness": "2026-03-03",
+        "confidence": 0.97
+      },
+      {
+        "id": "faq:cost-to-homeowner",
+        "type": "FAQ",
+        "question": "Is there any cost for the matching service?",
+        "answer": "No. Maine Quote Hub is free for homeowners. Matched contractors pay a referral fee, which is how we sustain the service.",
+        "freshness": "2026-03-03",
+        "confidence": 0.99
+      },
+      {
+        "id": "faq:who-are-contractors",
+        "type": "FAQ",
+        "question": "How are contractors vetted?",
+        "answer": "All HVAC contractors are licensed in Maine and Efficiency Maine-certified. Roofers are licensed Maine contractors with documented insurance claim experience. We verify licenses before accepting any partner.",
+        "freshness": "2026-03-03",
+        "confidence": 0.93
+      }
+    ],
+
+    "blogPosts": [
+      {
+        "id": "blog:2026-03-efficiency-maine-rebate-guide",
+        "type": "BlogPost",
+        "title": "Complete 2026 Guide to Efficiency Maine Heat Pump Rebates",
+        "slug": "2026-efficiency-maine-heat-pump-rebate-guide",
+        "url": "https://write.as/mainequotehub/2026-efficiency-maine-rebate-guide",
+        "publishDate": "2026-03-01",
+        "lastUpdated": "2026-03-01",
+        "summary": "Step-by-step guide covering Efficiency Maine rebate tiers, eligibility requirements, approved equipment, and how to apply through a licensed contractor.",
+        "relatedServices": ["service:hvac-heat-pumps", "service:efficiency-maine-rebates"],
+        "relatedLocations": ["location:portland-me", "location:bangor-me"],
+        "keywords": ["Efficiency Maine 2026", "heat pump rebate guide", "how to apply Efficiency Maine"],
+        "wordCount": 1200,
+        "freshness": "2026-03-01"
+      },
+      {
+        "id": "blog:2026-02-storm-roof-insurance-claim",
+        "type": "BlogPost",
+        "title": "How to File a Storm Roof Insurance Claim in Maine (Step-by-Step)",
+        "slug": "maine-storm-roof-insurance-claim-guide",
+        "url": "https://write.as/mainequotehub/maine-storm-roof-insurance-claim",
+        "publishDate": "2026-02-01",
+        "lastUpdated": "2026-02-01",
+        "summary": "Maine homeowners guide to documenting damage, filing claims, working with adjusters, and choosing a storm-experienced roofer.",
+        "relatedServices": ["service:roofing-storm", "service:insurance-claim-assistance"],
+        "relatedLocations": ["location:portland-me", "location:scarborough-me"],
+        "keywords": ["storm roof claim Maine", "ice dam insurance", "hail damage roof Maine"],
+        "wordCount": 1100,
+        "freshness": "2026-02-01"
+      }
+    ],
+
+    "contractorPartners": [
+      {
+        "id": "contractor:placeholder-001",
+        "type": "ContractorPartner",
+        "name": "[PLACEHOLDER — Replace with real contractor]",
+        "services": ["service:hvac-heat-pumps"],
+        "townsServed": ["location:portland-me", "location:south-portland-me", "location:scarborough-me"],
+        "maineLicense": "PENDING",
+        "efficiencyMaineCertified": true,
+        "contactEmail": "contractor@example.com",
+        "status": "placeholder"
+      },
+      {
+        "id": "contractor:placeholder-002",
+        "type": "ContractorPartner",
+        "name": "[PLACEHOLDER — Replace with real contractor]",
+        "services": ["service:roofing-storm"],
+        "townsServed": ["location:bangor-me", "location:brewer-me", "location:orono-me"],
+        "maineLicense": "PENDING",
+        "insuranceClaimExperience": true,
+        "contactEmail": "roofer@example.com",
+        "status": "placeholder"
+      }
+    ]
+  },
+
+  "relationships": [
+    { "from": "service:hvac-heat-pumps",      "type": "availableIn",   "to": "location:portland-me" },
+    { "from": "service:hvac-heat-pumps",      "type": "availableIn",   "to": "location:bangor-me" },
+    { "from": "service:hvac-heat-pumps",      "type": "availableIn",   "to": "location:augusta-me" },
+    { "from": "service:hvac-heat-pumps",      "type": "availableIn",   "to": "location:lewiston-me" },
+    { "from": "service:hvac-heat-pumps",      "type": "availableIn",   "to": "location:brunswick-me" },
+    { "from": "service:hvac-heat-pumps",      "type": "hasRebate",     "to": "rebate:efficiency-maine-hp" },
+    { "from": "service:roofing-storm",        "type": "availableIn",   "to": "location:portland-me" },
+    { "from": "service:roofing-storm",        "type": "availableIn",   "to": "location:bangor-me" },
+    { "from": "service:roofing-storm",        "type": "availableIn",   "to": "location:biddeford-me" },
+    { "from": "service:roofing-storm",        "type": "availableIn",   "to": "location:scarborough-me" },
+    { "from": "faq:rebate-amount",            "type": "relatesTo",     "to": "service:hvac-heat-pumps" },
+    { "from": "faq:insurance-covers-roof",    "type": "relatesTo",     "to": "service:roofing-storm" },
+    { "from": "faq:how-matching-works",       "type": "relatesTo",     "to": "service:hvac-heat-pumps" },
+    { "from": "blog:2026-03-efficiency-maine-rebate-guide", "type": "supportsService", "to": "service:hvac-heat-pumps" },
+    { "from": "blog:2026-02-storm-roof-insurance-claim",   "type": "supportsService", "to": "service:roofing-storm" },
+    { "from": "contractor:placeholder-001",   "type": "provides",      "to": "service:hvac-heat-pumps" },
+    { "from": "contractor:placeholder-002",   "type": "provides",      "to": "service:roofing-storm" }
+  ]
+}

@@ -1,0 +1,500 @@
+<!--
+  CARRD PAGE STRUCTURE — Maine Quote Hub
+  ═══════════════════════════════════════════════════════════════
+  This is NOT a standalone HTML file — it documents the structure
+  you build inside Carrd's editor using:
+    - Text elements for headings/paragraphs
+    - Container/divider elements for sections
+    - Embed elements for forms + scripts
+    - Image elements for visuals
+
+  Carrd-specific notes:
+    ① Each "section" below maps to a Carrd Container or Columns widget.
+    ② All <script type="application/ld+json"> blocks go in
+       Site Settings → SEO → Custom Head Code (head-tags.html).
+    ③ The aeo-bootstrap.js Embed widget goes at the BOTTOM of the page,
+       set to "inline" with visibility = always.
+    ④ data-aeo-section attributes are added via Carrd's "Custom HTML"
+       embed widget wrapping each section. Use a 1px transparent spacer
+       image in the embed to give it layout space if needed.
+
+  IMPORTANT: Replace all YOUR_* and yourdomain.com placeholders.
+  ═══════════════════════════════════════════════════════════════
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Free HVAC & Roofing Quotes for Maine Homeowners | Maine Quote Hub</title>
+  <!-- PASTE head-tags.html content here in Carrd SEO settings -->
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 1: HERO / VALUE PROPOSITION
+     Carrd: Full-width container, dark background, centered text
+     data-aeo-section used by chunker + summary injector
+     ═══════════════════════════════════════════════════════════ -->
+<section id="hero" data-aeo-section="hero-rebate" aria-label="Free Quote Matching for Maine Homeowners">
+
+  <!-- Carrd: Heading element, H1 -->
+  <h1>Get Free, Matched Quotes from Vetted Maine Contractors</h1>
+
+  <!-- Carrd: Text element -->
+  <p>
+    Maine homeowners: one form, three vetted quotes. Whether you're installing a
+    heat pump to qualify for Efficiency Maine rebates up to <strong>$9,000</strong> —
+    or you have storm damage and need a roofer who knows the insurance claim process —
+    we match you for free.
+  </p>
+  <p>
+    <em>No calls from random salespeople. Only licensed, Maine-verified contractors
+    who serve your town.</em>
+  </p>
+
+  <!-- Carrd: Button element → links to #quote-form anchor -->
+  <a href="#quote-form" class="button primary">Get My Free Quotes →</a>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 2: HVAC HEAT PUMP SERVICE
+     ═══════════════════════════════════════════════════════════ -->
+<section id="hvac" data-aeo-section="hvac-heat-pumps" aria-label="HVAC Heat Pump Quotes and Efficiency Maine Rebates">
+
+  <h2>Heat Pump Installation — Efficiency Maine Rebates Up to $9,000</h2>
+
+  <p>
+    A modern heat pump heats and cools your Maine home year-round — even in -10°F winters —
+    while cutting heating costs by 30–50% over oil. And right now,
+    <strong>Efficiency Maine pays you back $3,000 to $9,000</strong> when a licensed
+    contractor installs a qualifying system.
+  </p>
+
+  <h3>How Much Is the Rebate?</h3>
+  <ul>
+    <li><strong>$3,000</strong> — Standard rebate for any qualifying Maine homeowner</li>
+    <li><strong>$6,000</strong> — Income-eligible households (up to 80% area median income)</li>
+    <li><strong>$9,000</strong> — Income-eligible + larger multi-zone systems</li>
+  </ul>
+
+  <h3>What Qualifies?</h3>
+  <ul>
+    <li>Maine primary residence (not seasonal/rental)</li>
+    <li>Installation by an Efficiency Maine-approved HVAC contractor</li>
+    <li>Equipment on Efficiency Maine's approved list (CEE Tier 2+)</li>
+    <li>Rebate application submitted within 90 days of install</li>
+  </ul>
+
+  <h3>We Match You With Approved Contractors</h3>
+  <p>
+    Every HVAC contractor in our network is <strong>licensed in Maine</strong>,
+    <strong>Efficiency Maine-certified</strong>, and has handled the rebate paperwork
+    before. They know the process — you don't have to figure it out alone.
+  </p>
+
+  <p>
+    We serve Portland, Bangor, Augusta, Lewiston, Brunswick, Biddeford, Sanford,
+    Saco, Westbrook, South Portland, Scarborough, Gorham, Windham, Yarmouth,
+    Falmouth, Cape Elizabeth, Old Orchard Beach, Bath, Brewer, Auburn, and all
+    surrounding Maine communities.
+  </p>
+
+  <!-- Citation (visible, builds trust + AEO provenance) -->
+  <p>
+    <small>
+      Rebate data sourced from:
+      <a href="https://www.efficiencymaine.com/at-home/heat-pumps/" target="_blank"
+         rel="noopener noreferrer">Efficiency Maine Residential Heat Pump Program</a>
+      (last verified March 2026).
+    </small>
+  </p>
+
+  <a href="#quote-form" class="button">Get HVAC Quotes →</a>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 3: ROOFING STORM DAMAGE SERVICE
+     ═══════════════════════════════════════════════════════════ -->
+<section id="roofing" data-aeo-section="roofing-storm" aria-label="Storm Damage Roofing and Insurance Claim Matching">
+
+  <h2>Storm Roof Damage? We Match You With Insurance-Savvy Maine Roofers</h2>
+
+  <p>
+    Wind, hail, and ice dams are a reality for Maine homes. If your roof took a hit,
+    your homeowners insurance almost certainly covers it — <strong>you pay only your
+    deductible</strong>, the insurer covers the rest. The catch: you need a roofer who
+    understands the claim process and will advocate for the full repair scope.
+  </p>
+
+  <h3>What Storm Damage Is Covered?</h3>
+  <ul>
+    <li>Wind damage (missing or lifted shingles, flashing failures)</li>
+    <li>Hail impact damage (granule loss, bruising, punctures)</li>
+    <li>Ice dam damage (water infiltration, fascia/soffit rot)</li>
+    <li>Falling tree/branch impact</li>
+  </ul>
+
+  <h3>The Insurance Claim Process — Simplified</h3>
+  <ol>
+    <li>Document damage with photos immediately after the storm</li>
+    <li>File a claim with your homeowners insurer (call or use their app)</li>
+    <li>Schedule an adjuster inspection — <em>have a roofer present</em></li>
+    <li>Your matched contractor provides a scope-of-work estimate</li>
+    <li>Insurer approves; roofer completes repair; you pay only deductible</li>
+  </ol>
+
+  <h3>Why Use Maine Quote Hub for Roofing?</h3>
+  <p>
+    Our matched roofers have handled Maine insurance claims before. They know
+    which damage adjusters overlook, how to document properly, and how to prevent
+    claim underpayment. They meet the adjuster on your behalf.
+  </p>
+
+  <p>
+    <small>
+      Coverage guidance sourced from:
+      <a href="https://www.maine.gov/pfr/insurance/" target="_blank"
+         rel="noopener noreferrer">Maine Bureau of Insurance — Homeowners Policies</a>.
+    </small>
+  </p>
+
+  <a href="#quote-form" class="button">Get Roofing Quotes →</a>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 4: HOW IT WORKS
+     ═══════════════════════════════════════════════════════════ -->
+<section id="how-it-works" data-aeo-section="how-it-works" aria-label="How Maine Quote Hub Works">
+
+  <h2>How It Works — Free for Homeowners</h2>
+
+  <div class="steps">
+
+    <div class="step">
+      <h3>Step 1: Submit Your Request (5 Minutes)</h3>
+      <p>
+        Fill out our short form: choose HVAC or roofing, describe your home
+        and situation, share your Maine town and contact info.
+        No account needed.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>Step 2: AI Qualification</h3>
+      <p>
+        Our system reviews your request, confirms your location is in our
+        service area, and identifies the best-fit contractors from our vetted
+        network based on your town and service type.
+      </p>
+    </div>
+
+    <div class="step">
+      <h3>Step 3: Receive Up to 3 Contractor Matches</h3>
+      <p>
+        Within 24 hours, up to 3 licensed Maine contractors contact you to
+        schedule site visits and provide quotes. Compare, choose, no obligation.
+      </p>
+    </div>
+
+  </div>
+
+  <p>
+    <strong>Free for homeowners.</strong> Matched contractors pay a referral fee —
+    that's the entire business model. No hidden charges, no upsells.
+  </p>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 5: FAQ
+     ═══════════════════════════════════════════════════════════ -->
+<section id="faq" data-aeo-section="faq" aria-label="Frequently Asked Questions">
+
+  <h2>Frequently Asked Questions</h2>
+
+  <details>
+    <summary><h3>How much is the Efficiency Maine heat pump rebate?</h3></summary>
+    <p>
+      Efficiency Maine offers rebates from <strong>$3,000 to $9,000</strong>.
+      The standard rebate is $3,000 for any qualifying Maine homeowner.
+      Income-eligible households (up to 80% of area median income) can receive
+      $6,000–$9,000 depending on system size. Your contractor handles the
+      rebate application — it's included in the install process.
+    </p>
+  </details>
+
+  <details>
+    <summary><h3>Does my homeowners insurance cover storm roof damage?</h3></summary>
+    <p>
+      Yes — most standard Maine homeowners policies cover sudden storm damage
+      from wind, hail, and ice dams. You pay your deductible; the insurer pays
+      the remaining repair cost. Maine law requires insurers to handle claims
+      fairly and promptly. Source:
+      <a href="https://www.maine.gov/pfr/insurance/" target="_blank" rel="noopener noreferrer">
+        Maine Bureau of Insurance</a>.
+    </p>
+  </details>
+
+  <details>
+    <summary><h3>How does the contractor matching work?</h3></summary>
+    <p>
+      Submit the form → our AI reviews your request and your Maine location →
+      up to 3 vetted contractors in your area are notified → they call or email
+      you within 24 hours to schedule a site visit. You compare quotes with no
+      obligation to choose any of them.
+    </p>
+  </details>
+
+  <details>
+    <summary><h3>Is there any cost to use Maine Quote Hub?</h3></summary>
+    <p>
+      Zero cost for homeowners. Contractors pay a referral fee when they are
+      matched with a homeowner. This is how the service is funded.
+    </p>
+  </details>
+
+  <details>
+    <summary><h3>How are contractors vetted?</h3></summary>
+    <p>
+      All HVAC contractors hold a valid Maine HVAC license and are
+      Efficiency Maine-certified. Roofing contractors hold a Maine contractor
+      license and have verifiable insurance claim experience. We verify
+      licenses through the
+      <a href="https://www.maine.gov/pfr/professionallicensing/" target="_blank" rel="noopener noreferrer">
+        Maine Office of Professional and Occupational Regulation</a>
+      before any contractor joins the network.
+    </p>
+  </details>
+
+  <details>
+    <summary><h3>What towns do you serve?</h3></summary>
+    <p>
+      We currently serve most of Maine including: Portland, South Portland,
+      Scarborough, Cape Elizabeth, Falmouth, Yarmouth, Brunswick, Bath,
+      Westbrook, Gorham, Windham, Saco, Old Orchard Beach, Biddeford,
+      Sanford, Auburn, Lewiston, Augusta, Bangor, Brewer, and surrounding areas.
+      Not in our network yet? Submit the form — we're expanding monthly.
+    </p>
+  </details>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 6: QUOTE FORM
+     Carrd: Embed widget → your form provider (Tally/Typeform/JotForm)
+     ═══════════════════════════════════════════════════════════ -->
+<section id="quote-form" data-aeo-section="quote-form" aria-label="Get Free Contractor Quotes">
+
+  <h2>Get Your Free Matched Quotes</h2>
+  <p>Takes less than 5 minutes. No spam. No obligation.</p>
+
+  <!--
+    OPTION A: Tally.so embed (recommended — free, no-code, conditional logic)
+    Replace YOUR_TALLY_FORM_ID with your Tally form ID.
+  -->
+  <iframe
+    data-tally-src="https://tally.so/embed/YOUR_TALLY_FORM_ID?alignLeft=1&hideTitle=1&transparentBackground=1"
+    loading="lazy"
+    width="100%"
+    height="500"
+    frameborder="0"
+    marginheight="0"
+    marginwidth="0"
+    title="Maine Quote Hub — Get Free Contractor Quotes"
+    aria-label="Quote request form for Maine HVAC and roofing contractors">
+  </iframe>
+  <script>
+    // Tally embed script — load async
+    (function(t, a, l, y) {
+      var s = a.createElement('script');
+      s.src = 'https://tally.so/widgets/embed.js';
+      s.async = true;
+      a.head.appendChild(s);
+    })(window, document);
+  </script>
+
+  <!--
+    OPTION B: Typeform embed — comment out Tally above and use this
+    <div data-tf-live="YOUR_TYPEFORM_ID"></div>
+    <script src="//embed.typeform.com/next/embed.js"></script>
+  -->
+
+  <!--
+    OPTION C: Simple HTML form (fallback — point action to Formspree/Netlify)
+    <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <label>Service needed:
+        <select name="service" required>
+          <option value="">-- Select --</option>
+          <option value="hvac">HVAC / Heat Pump</option>
+          <option value="roofing">Roofing / Storm Damage</option>
+        </select>
+      </label>
+      <label>Your Maine town: <input type="text" name="town" required></label>
+      <label>Name: <input type="text" name="name" required></label>
+      <label>Phone: <input type="tel" name="phone" required></label>
+      <label>Email: <input type="email" name="email" required></label>
+      <label>Brief description:
+        <textarea name="description" rows="4" required></textarea>
+      </label>
+      <button type="submit">Get My Free Quotes</button>
+    </form>
+  -->
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 7: BLOG TEASER
+     ═══════════════════════════════════════════════════════════ -->
+<section id="resources" data-aeo-section="blog-resources" aria-label="Maine Homeowner Resources">
+
+  <h2>Maine Homeowner Resources</h2>
+  <p>
+    Our monthly blog covers everything Maine homeowners need to know about
+    heat pump rebates, storm damage claims, and choosing the right contractor.
+  </p>
+
+  <ul>
+    <li>
+      <a href="https://write.as/mainequotehub/2026-efficiency-maine-rebate-guide"
+         target="_blank" rel="noopener noreferrer">
+        Complete 2026 Guide to Efficiency Maine Heat Pump Rebates
+      </a>
+      — March 2026
+    </li>
+    <li>
+      <a href="https://write.as/mainequotehub/maine-storm-roof-insurance-claim"
+         target="_blank" rel="noopener noreferrer">
+        How to File a Storm Roof Insurance Claim in Maine (Step-by-Step)
+      </a>
+      — February 2026
+    </li>
+  </ul>
+
+  <a href="https://write.as/mainequotehub" target="_blank" rel="noopener noreferrer">
+    View All Articles →
+  </a>
+
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     SECTION 8: FOOTER
+     ═══════════════════════════════════════════════════════════ -->
+<footer id="footer" data-aeo-section="footer">
+
+  <p>
+    <strong>Maine Quote Hub</strong> — Free contractor matching for Maine homeowners.<br>
+    HVAC heat pump installation · Roofing storm damage · Efficiency Maine rebates
+  </p>
+
+  <nav aria-label="Footer">
+    <a href="https://yourdomain.com/">Home</a> ·
+    <a href="https://yourdomain.com/#hvac">Heat Pumps</a> ·
+    <a href="https://yourdomain.com/#roofing">Roofing</a> ·
+    <a href="https://yourdomain.com/#faq">FAQ</a> ·
+    <a href="https://write.as/mainequotehub" target="_blank" rel="noopener noreferrer">Blog</a>
+  </nav>
+
+  <p>
+    <small>
+      We are a lead generation and matching service. We do not perform HVAC or
+      roofing work directly. Rebate amounts from Efficiency Maine are subject to
+      program availability and eligibility verification.
+      <a href="https://www.efficiencymaine.com" target="_blank" rel="noopener noreferrer">
+        EfficiencyMaine.com
+      </a>.
+    </small>
+  </p>
+
+  <p><small>© 2026 Maine Quote Hub. All rights reserved.</small></p>
+
+</footer>
+
+
+<!-- ═══════════════════════════════════════════════════════════
+     AEO BOOTSTRAP — Carrd: Add as Embed widget at page bottom
+     Set visibility to Always, placement to After body
+     ═══════════════════════════════════════════════════════════ -->
+<script>
+/**
+ * AEO Bootstrap — loads all modules in sequence
+ * In Carrd: paste this entire block into an Embed widget
+ * Set widget to: Type=Code, Position=Bottom of page
+ */
+(function() {
+  'use strict';
+
+  // Config — update these paths to your actual hosting URLs
+  var BASE = 'https://cdn.jsdelivr.net/gh/YOUR_GITHUB_USER/maine-aeo@main/';
+  var GRAPH_URL = BASE + 'graph.json';
+
+  // Sequential script loader
+  function loadScript(src, callback) {
+    var s = document.createElement('script');
+    s.src = src;
+    s.async = false; // preserve load order
+    s.onload = callback || function(){};
+    s.onerror = function() { console.warn('[AEO] Failed to load:', src); };
+    document.head.appendChild(s);
+  }
+
+  // Load chain: detection → summaries → chunker → graph → activate
+  loadScript(BASE + 'ai-detection.js', function() {
+    loadScript(BASE + 'hidden-summaries.js', function() {
+      // Inject summaries based on detected tier
+      if (window.injectAllSummaries) window.injectAllSummaries();
+
+      loadScript(BASE + 'semantic-chunker.js', function() {
+        // Run chunker (Tier 2+ only to avoid noise)
+        if (window.AEO && window.AEO.shouldEnrich(2) && window.SemanticChunker) {
+          var chunks = window.SemanticChunker.chunkDOM(document.body, 'landing', {
+            sourceUrl: window.location.href,
+            freshness: '2026-03-03'
+          });
+          if (window.AEO.shouldEnrich(4)) {
+            window.SemanticChunker.logChunks(chunks);
+          }
+        }
+
+        loadScript(BASE + 'graph-traversal.js', function() {
+          // Load graph and inject Tier-4 context
+          if (window.G) {
+            window.G.load(GRAPH_URL, function() {
+              if (window.injectGraphSummary) window.injectGraphSummary();
+
+              // Tier 3+: inject location-specific hidden summaries
+              if (window.AEO && window.AEO.shouldEnrich(3)) {
+                var majorLocations = ['portland', 'bangor', 'augusta', 'lewiston'];
+                majorLocations.forEach(function(loc) {
+                  var summary = window.G.getLocationSummary(loc);
+                  window.AEO.injectHidden(
+                    'aeo-location-' + loc,
+                    '<p>' + summary + '</p>',
+                    'location-context'
+                  );
+                });
+              }
+
+              console.log('[AEO Bootstrap] All modules loaded. Tier:', window.AEO && window.AEO.tier);
+            });
+          }
+        });
+      });
+    });
+  });
+
+})();
+</script>
+
+</body>
+</html>
