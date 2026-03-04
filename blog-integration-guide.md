@@ -256,7 +256,7 @@ Keep the 2 most recent posts visible; archive older ones to the Write.as blog in
 - [ ] graph-traversal.js hosted at: same GitHub repo
 - [ ] All URLs updated in carrd-page-structure.html bootstrap block
 - [ ] jsDelivr CDN purge after each graph.json update:
-      https://purge.jsdelivr.net/gh/YOUR_GITHUB_USER/maine-aeo@main/graph.json
+      https://purge.jsdelivr.net/gh/cabaldecay-glitch/maine-aeo@main/graph.json
 
 ## Console Log Reference (What You Should See on Page Load)
 ```

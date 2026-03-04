@@ -18,7 +18,7 @@
 (function() {
   'use strict';
 
-  var GRAPH_URL = 'https://cdn.jsdelivr.net/gh/YOUR_GITHUB_USER/maine-aeo@main/graph.json';
+  var GRAPH_URL = 'https://cdn.jsdelivr.net/gh/cabaldecay-glitch/maine-aeo@main/graph.json';
   // Alternative: same-origin path if hosted on same server
   // var GRAPH_URL = '/graph.json';
 

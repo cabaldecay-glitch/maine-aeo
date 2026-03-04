@@ -24,7 +24,7 @@
   // ── Configuration ─────────────────────────────────────────────
   var CONFIG = {
     // Update to your actual GitHub username and repo name
-    cdnBase: 'https://cdn.jsdelivr.net/gh/YOUR_GITHUB_USER/maine-aeo@main/',
+    cdnBase: 'https://cdn.jsdelivr.net/gh/cabaldecay-glitch/maine-aeo@main/',
 
     // Set to true to skip chunking for human visitors (performance)
     chunkAIOnly: true,
